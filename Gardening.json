@@ -1,262 +1,304 @@
 {
-  "GardeningPlatform": [
-    {
-      "id": 1,
-      "nearbyGardens": {
-         "name": "Community Garden A",
-         "location": "123 Example Street, City",
-         "description": "A community garden with a focus on sustainable practices.",
-         "contact": "communitygardenA@example.com"
-          }
-     "gardeningEvents": {
-        "name": "Gardening Workshop A",
-        "date": "2023-12-15",
-        "location": "Community Center, City",
-        "description": "Join us for an interactive workshop on organic gardening techniques."
-         }
-     "gardeningExperiences": {
-        "user": "Akshay Varma",
-        "title": "Tips for Growing Tomatoes",
-        "description": "Here are some tips I've learned for successfully growing tomatoes in your garden."
-         } 
-    "sustainableGardeningTips": {
-        "tip": "Use natural compost to enrich the soil and promote healthy plant growth.",
-        "category": "Soil Management"
-         }
-     },
-     {  
-       "id": 2,
-       "nearbyGardens": {
-          "name": "Community Garden B",
-          "location": "456 Sample Avenue, Town",
-          "description": "An urban garden providing fresh produce to the local community.",
-          "contact": "communitygardenB@example.com"
-           }
-       "gardeningEvents": {
-         "name": "Gardening Event B",
-         "date": "2023-12-20",
-         "location": "Local Park, Town",
-         "description": "Learn about composting and sustainable gardening practices in this community event."
-          }
-      "gardeningExperiences": {
-         "user": "Maksim",
-         "title": "Composting Made Easy",
-         "description": "Learn how to create nutrient-rich compost for a thriving garden."
-          }
-      "sustainableGardeningTips": {
-        "tip": "Implement rainwater harvesting to conserve water and reduce dependency on external sources.",
-        "category": "Water Conservation"
-         }
-    },
-    {
-      "id": 3,
-      "nearbyGardens": {
-        "name": "Organic Oasis",
-        "location": "789 Garden Lane, Kildare",
-        "description": "An organic garden fostering community engagement in sustainable living.",
-        "contact": "organicoasis@example.com"
-         }
-     "gardeningEvents": {
-      "name": "Seed Saving Workshop",
-      "date": "2024-01-10",
-      "location": "Organic Oasis, Kildare",
-      "description": "Learn the art of saving seeds for a sustainable garden future."
-    }
-   "gardeningExperiences": {
-      "user": "John Smith",
-      "title": "Vertical Gardening Techniques",
-      "description": "Discover innovative methods for maximizing space with vertical gardens."
-    }
-   "sustainableGardeningTips": {
-      "tip": "Encourage biodiversity by planting native species and creating habitats for beneficial insects and birds.",
-      "category": "Biodiversity"
-    }
-  },
-  {
-    "id": 4,
-    "nearbyGardens": {
-      "name": "Sunflower Haven",
-      "location": "101 Sunshine Boulevard, Countryside",
-      "description": "A sunflower-themed garden offering educational programs for children.",
-      "contact": "sunflowerhaven@example.com"
-    }
-    "gardeningEvents": {
-     "name": "Pollinator Party",
-      "date": "2024-01-15",
-      "location": "Sunflower Haven, Countryside",
-      "description": "Celebrate pollinators and their vital role in gardening ecosystems."
-    }
-    "gardeningExperiences": {
-      "user": "David Johnson",
-      "title": "Herb Gardening 101",
-      "description": "Essential tips and tricks for cultivating a thriving herb garden."
-    }
-    "sustainableGardeningTips": {
-      "tip": "Practice companion planting to naturally deter pests and enhance growth.",
-      "category": "Planting Techniques"
-   }
-    },
-{
-    "id": 5,
-    "nearbyGardens": {
-      "name": "Green Haven Community Garden",
-      "location": "234 Greenery Street, Suburbia",
-      "description": "A community garden promoting sustainable practices and environmental education.",
-      "contact": "greenhaven@example.com"
-    },
-    "gardeningEvents": {
-      "name": "Harvest Festival",
-      "date": "2024-02-05",
-      "location": "Green Haven Community Garden, Suburbia",
-      "description": "Celebrate the bountiful harvest and learn about seasonal planting."
-    },
-    "gardeningExperiences": {
-      "user": "Sophie R",
-      "title": "Creating a Pollinator-Friendly Garden",
-      "description": "Discover ways to attract and support pollinators for a thriving garden ecosystem."
-    },
-    "sustainableGardeningTips": {
-      "tip": "Create a diverse range of flowering plants to attract various pollinator species.",
-      "category": "Pollinator Conservation"
-    }
-  },
-  {
-    "id": 6,
-    "nearbyGardens": {
-      "name": "Rooftop Oasis",
-      "location": "789 Skyview Avenue, City Center",
-      "description": "An innovative rooftop garden promoting urban green spaces and sustainability.",
-      "contact": "rooftopoasis@example.com"
-    },
-    "gardeningEvents": {
-      "name": "Urban Gardening Symposium",
-      "date": "2024-02-12",
-      "location": "Rooftop Oasis, City Center",
-      "description": "Explore the benefits of urban gardening and vertical farming techniques."
-    },
-    "gardeningExperiences": {
-      "user": "Michael Brown",
-      "title": "Hydroponics for Beginners",
-      "description": "Learn the basics of hydroponic gardening for space-efficient plant cultivation."
-    },
-    "sustainableGardeningTips": {
-      "tip": "Utilize recycled materials for containers and vertical gardening structures.",
-      "category": "Urban Gardening"
-    }
-  },
-  {
-    "id": 7,
-    "nearbyGardens": {
-      "name": "Sustainable Seeds Garden Collective",
-      "location": "555 Harmony Road, Countryside",
-      "description": "A collective garden focused on heirloom plants and sustainable seed practices.",
-      "contact": "sustainableseeds@example.com"
-    },
-    "gardeningEvents": {
-      "name": "Heirloom Seed Exchange",
-      "date": "2024-02-20",
-      "location": "Sustainable Seeds Garden Collective, Countryside",
-      "description": "Exchange heirloom seeds and learn about seed preservation."
-    },
-    "gardeningExperiences": {
-      "user": "Alpona",
-      "title": "Preserving Heirloom Varieties",
-      "description": "Discover methods to preserve and propagate heirloom plant species."
-    },
-    "sustainableGardeningTips": {
-      "tip": "Record keeping is crucial for maintaining the purity of heirloom seed varieties.",
-      "category": "Seed Preservation"
-    }
-  },
-{
-    "id": 8,
-    "nearbyGardens": {
-      "name": "Zen Garden Sanctuary",
-      "location": "321 Tranquil Lane, Mountainside",
-      "description": "A serene garden promoting mindfulness and sustainable landscaping.",
-      "contact": "zengardensanctuary@example.com"
-    },
-    "gardeningEvents": {
-      "name": "Mindful Gardening Retreat",
-      "date": "2024-03-10",
-      "location": "Zen Garden Sanctuary, Mountainside",
-      "description": "Experience mindfulness in gardening practices for inner peace and environmental harmony."
-    },
-    "gardeningExperiences": {
-      "user": "Olivia Johnson",
-      "title": "Zen Garden Design Principles",
-      "description": "Explore the principles of Zen garden design for a calming outdoor space."
-    },
-    "sustainableGardeningTips": {
-      "tip": "Incorporate natural elements like rocks and gravel to create tranquility in the garden.",
-      "category": "Mindful Landscaping"
-    }
-  },
-  {
-    "id": 9,
-    "nearbyGardens": {
-      "name": "Permaculture Paradise",
-      "location": "876 Harmony Street, Rural Area",
-      "description": "A permaculture-inspired garden emphasizing sustainable food production and ecosystems.",
-      "contact": "permacultureparadise@example.com"
-    },
-    "gardeningEvents": {
-      "name": "Permaculture Design Course",
-      "date": "2024-03-15",
-      "location": "Permaculture Paradise, Rural Area",
-      "description": "Learn the principles of permaculture design for regenerative landscapes."
-    },
-    "gardeningExperiences": {
-      "user": "Liam Wilson",
-      "title": "Forest Gardening Techniques",
-      "description": "Discover methods to mimic natural ecosystems for abundant food production."
-    },
-    "sustainableGardeningTips": {
-      "tip": "Utilize companion planting and diverse plant guilds for natural pest control and nutrient cycling.",
-      "category": "Permaculture Practices"
-    }
-  },
-  {
-    "id": 10,
-    "nearbyGardens": {
-      "name": "Artisanal Herb Garden",
-      "location": "444 Culinary Avenue, Town",
-      "description": "A garden specializing in rare and culinary herbs for gourmet enthusiasts.",
-      "contact": "artisanalherbgarden@example.com"
-    },
-    "gardeningEvents": {
-      "name": "Herb Tasting and Workshop",
-      "date": "2024-03-20",
-      "location": "Artisanal Herb Garden, Town",
-      "description": "Experience the flavors of unique herbs and learn culinary uses."
-    },
-    "gardeningExperiences": {
-      "user": "Isabella Martin",
-      "title": "Herb Propagation Techniques",
-      "description": "Explore methods to propagate rare herbs for home cultivation."
-    },
-    "sustainableGardeningTips": {
-      "tip": "Harvest herbs selectively to encourage continuous growth and maintain plant health.",
-      "category": "Herb Cultivation"
-    }
-  },
-
-]
+    "GardeningPlatform": [
+        {
+            "id": 1,
+            "nearbyGardens": {
+                "name": "Community Garden A",
+                "location": "123 Example Street, City",
+                "description": "A community garden with a focus on sustainable practices.",
+                "contact": "communitygardenA@example.com"
+            }
+        },
+        {
+            "gardeningEvents": {
+                "name": "Gardening Workshop A",
+                "date": "2023-12-15",
+                "location": "Community Center, City",
+                "description": "Join us for an interactive workshop on organic gardening techniques."
+            }
+        },
+        {
+            "gardeningExperiences": {
+                "user": "Akshay Varma",
+                "title": "Tips for Growing Tomatoes",
+                "description": "Here are some tips I've learned for successfully growing tomatoes in your garden."
+            }
+        },
+        {
+            "sustainableGardeningTips": {
+                "tip": "Use natural compost to enrich the soil and promote healthy plant growth.",
+                "category": "Soil Management"
+            }
+        },
+        {
+            "id": 2,
+            "nearbyGardens": {
+                "name": "Community Garden B",
+                "location": "456 Sample Avenue, Town",
+                "description": "An urban garden providing fresh produce to the local community.",
+                "contact": "communitygardenB@example.com"
+            }
+        },
+        {
+            "gardeningEvents": {
+                "name": "Gardening Event B",
+                "date": "2023-12-20",
+                "location": "Local Park, Town",
+                "description": "Learn about composting and sustainable gardening practices in this community event."
+            }
+        },
+        {
+            "gardeningExperiences": {
+                "user": "Maksim",
+                "title": "Composting Made Easy",
+                "description": "Learn how to create nutrient-rich compost for a thriving garden."
+            }
+        },
+        {
+            "sustainableGardeningTips": {
+                "tip": "Implement rainwater harvesting to conserve water and reduce dependency on external sources.",
+                "category": "Water Conservation"
+            }
+        },
+        {
+            "id": 3,
+            "nearbyGardens": {
+                "name": "Organic Oasis",
+                "location": "789 Garden Lane, Kildare",
+                "description": "An organic garden fostering community engagement in sustainable living.",
+                "contact": "organicoasis@example.com"
+            }
+        },
+        {
+            "gardeningEvents": {
+                "name": "Seed Saving Workshop",
+                "date": "2024-01-10",
+                "location": "Organic Oasis, Kildare",
+                "description": "Learn the art of saving seeds for a sustainable garden future."
+            }
+        },
+        {
+            "gardeningExperiences": {
+                "user": "John Smith",
+                "title": "Vertical Gardening Techniques",
+                "description": "Discover innovative methods for maximizing space with vertical gardens."
+            }
+        },
+        {
+            "sustainableGardeningTips": {
+                "tip": "Encourage biodiversity by planting native species and creating habitats for beneficial insects and birds.",
+                "category": "Biodiversity"
+            }
+        },
+        {
+            "id": 4,
+            "nearbyGardens": {
+                "name": "Sunflower Haven",
+                "location": "101 Sunshine Boulevard, Countryside",
+                "description": "A sunflower-themed garden offering educational programs for children.",
+                "contact": "sunflowerhaven@example.com"
+            }
+        },
+        {
+            "gardeningEvents": {
+                "name": "Pollinator Party",
+                "date": "2024-01-15",
+                "location": "Sunflower Haven, Countryside",
+                "description": "Celebrate pollinators and their vital role in gardening ecosystems."
+            }
+        },
+        {
+            "gardeningExperiences": {
+                "user": "David Johnson",
+                "title": "Herb Gardening 101",
+                "description": "Essential tips and tricks for cultivating a thriving herb garden."
+            }
+        },
+        {
+            "sustainableGardeningTips": {
+                "tip": "Practice companion planting to naturally deter pests and enhance growth.",
+                "category": "Planting Techniques"
+            }
+        },
+        {
+            "id": 5,
+            "nearbyGardens": {
+                "name": "Green Haven Community Garden",
+                "location": "234 Greenery Street, Suburbia",
+                "description": "A community garden promoting sustainable practices and environmental education.",
+                "contact": "greenhaven@example.com"
+            }
+        },
+        {
+            "gardeningEvents": {
+                "name": "Harvest Festival",
+                "date": "2024-02-05",
+                "location": "Green Haven Community Garden, Suburbia",
+                "description": "Celebrate the bountiful harvest and learn about seasonal planting."
+            }
+        },
+        {
+            "gardeningExperiences": {
+                "user": "Sophie R",
+                "title": "Creating a Pollinator-Friendly Garden",
+                "description": "Discover ways to attract and support pollinators for a thriving garden ecosystem."
+            }
+        },
+        {
+            "sustainableGardeningTips": {
+                "tip": "Create a diverse range of flowering plants to attract various pollinator species.",
+                "category": "Pollinator Conservation"
+            }
+        },
+        {
+            "id": 6,
+            "nearbyGardens": {
+                "name": "Rooftop Oasis",
+                "location": "789 Skyview Avenue, City Center",
+                "description": "An innovative rooftop garden promoting urban green spaces and sustainability.",
+                "contact": "rooftopoasis@example.com"
+            }
+        },
+        {
+            "gardeningEvents": {
+                "name": "Urban Gardening Symposium",
+                "date": "2024-02-12",
+                "location": "Rooftop Oasis, City Center",
+                "description": "Explore the benefits of urban gardening and vertical farming techniques."
+            }
+        },
+        {
+            "gardeningExperiences": {
+                "user": "Michael Brown",
+                "title": "Hydroponics for Beginners",
+                "description": "Learn the basics of hydroponic gardening for space-efficient plant cultivation."
+            }
+        },
+        {
+            "sustainableGardeningTips": {
+                "tip": "Utilize recycled materials for containers and vertical gardening structures.",
+                "category": "Urban Gardening"
+            }
+        },
+        {
+            "id": 7,
+            "nearbyGardens": {
+                "name": "Sustainable Seeds Garden Collective",
+                "location": "555 Harmony Road, Countryside",
+                "description": "A collective garden focused on heirloom plants and sustainable seed practices.",
+                "contact": "sustainableseeds@example.com"
+            }
+        },
+        {
+            "gardeningEvents": {
+                "name": "Heirloom Seed Exchange",
+                "date": "2024-02-20",
+                "location": "Sustainable Seeds Garden Collective, Countryside",
+                "description": "Exchange heirloom seeds and learn about seed preservation."
+            }
+        },
+        {
+            "gardeningExperiences": {
+                "user": "Alpona",
+                "title": "Preserving Heirloom Varieties",
+                "description": "Discover methods to preserve and propagate heirloom plant species."
+            }
+        },
+        {
+            "sustainableGardeningTips": {
+                "tip": "Record keeping is crucial for maintaining the purity of heirloom seed varieties.",
+                "category": "Seed Preservation"
+            }
+        },
+        {
+            "id": 8,
+            "nearbyGardens": {
+                "name": "Zen Garden Sanctuary",
+                "location": "321 Tranquil Lane, Mountainside",
+                "description": "A serene garden promoting mindfulness and sustainable landscaping.",
+                "contact": "zengardensanctuary@example.com"
+            }
+        },
+        {
+            "gardeningEvents": {
+                "name": "Mindful Gardening Retreat",
+                "date": "2024-03-10",
+                "location": "Zen Garden Sanctuary, Mountainside",
+                "description": "Experience mindfulness in gardening practices for inner peace and environmental harmony."
+            }
+        },
+        {
+            "gardeningExperiences": {
+                "user": "Olivia Johnson",
+                "title": "Zen Garden Design Principles",
+                "description": "Explore the principles of Zen garden design for a calming outdoor space."
+            }
+        },
+        {
+            "sustainableGardeningTips": {
+                "tip": "Incorporate natural elements like rocks and gravel to create tranquility in the garden.",
+                "category": "Mindful Landscaping"
+            }
+        },
+        {
+            "id": 9,
+            "nearbyGardens": {
+                "name": "Permaculture Paradise",
+                "location": "876 Harmony Street, Rural Area",
+                "description": "A permaculture-inspired garden emphasizing sustainable food production and ecosystems.",
+                "contact": "permacultureparadise@example.com"
+            }
+        },
+        {
+            "gardeningEvents": {
+                "name": "Permaculture Design Course",
+                "date": "2024-03-15",
+                "location": "Permaculture Paradise, Rural Area",
+                "description": "Learn the principles of permaculture design for regenerative landscapes."
+            }
+        },
+        {
+            "gardeningExperiences": {
+                "user": "Liam Wilson",
+                "title": "Forest Gardening Techniques",
+                "description": "Discover methods to mimic natural ecosystems for abundant food production."
+            }
+        },
+        {
+            "sustainableGardeningTips": {
+                "tip": "Utilize companion planting and diverse plant guilds for natural pest control and nutrient cycling.",
+                "category": "Permaculture Practices"
+            }
+        },
+        {
+            "id": 10,
+            "nearbyGardens": {
+                "name": "Artisanal Herb Garden",
+                "location": "444 Culinary Avenue, Town",
+                "description": "A garden specializing in rare and culinary herbs for gourmet enthusiasts.",
+                "contact": "artisanalherbgarden@example.com"
+            }
+        },
+        {
+            "gardeningEvents": {
+                "name": "Herb Tasting and Workshop",
+                "date": "2024-03-20",
+                "location": "Artisanal Herb Garden, Town",
+                "description": "Experience the flavors of unique herbs and learn culinary uses."
+            }
+        },
+        {
+            "gardeningExperiences": {
+                "user": "Isabella Martin",
+                "title": "Herb Propagation Techniques",
+                "description": "Explore methods to propagate rare herbs for home cultivation."
+            }
+        },
+        {
+            "sustainableGardeningTips": {
+                "tip": "Harvest herbs selectively to encourage continuous growth and maintain plant health.",
+                "category": "Herb Cultivation"
+            }
+        }
+    ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
