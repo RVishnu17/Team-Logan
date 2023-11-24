@@ -15,7 +15,7 @@
         "description": "Join us for an interactive workshop on organic gardening techniques."
          }
      "gardeningExperiences": {
-        "user": "John Doe",
+        "user": "Akshay Varma",
         "title": "Tips for Growing Tomatoes",
         "description": "Here are some tips I've learned for successfully growing tomatoes in your garden."
          } 
@@ -39,7 +39,7 @@
          "description": "Learn about composting and sustainable gardening practices in this community event."
           }
       "gardeningExperiences": {
-         "user": "Jane Smith",
+         "user": "Maksim",
          "title": "Composting Made Easy",
          "description": "Learn how to create nutrient-rich compost for a thriving garden."
           }
@@ -52,18 +52,18 @@
       "id": 3,
       "nearbyGardens": {
         "name": "Organic Oasis",
-        "location": "789 Garden Lane, Suburbia",
+        "location": "789 Garden Lane, Kildare",
         "description": "An organic garden fostering community engagement in sustainable living.",
         "contact": "organicoasis@example.com"
          }
      "gardeningEvents": {
       "name": "Seed Saving Workshop",
       "date": "2024-01-10",
-      "location": "Organic Oasis, Suburbia",
+      "location": "Organic Oasis, Kildare",
       "description": "Learn the art of saving seeds for a sustainable garden future."
     }
    "gardeningExperiences": {
-      "user": "Maria Garcia",
+      "user": "John Smith",
       "title": "Vertical Gardening Techniques",
       "description": "Discover innovative methods for maximizing space with vertical gardens."
     }
@@ -111,7 +111,7 @@
       "description": "Celebrate the bountiful harvest and learn about seasonal planting."
     },
     "gardeningExperiences": {
-      "user": "Sophie Anderson",
+      "user": "Sophie R",
       "title": "Creating a Pollinator-Friendly Garden",
       "description": "Discover ways to attract and support pollinators for a thriving garden ecosystem."
     },
@@ -159,7 +159,7 @@
       "description": "Exchange heirloom seeds and learn about seed preservation."
     },
     "gardeningExperiences": {
-      "user": "Emma Thompson",
+      "user": "Alpona",
       "title": "Preserving Heirloom Varieties",
       "description": "Discover methods to preserve and propagate heirloom plant species."
     },
@@ -183,7 +183,7 @@
       "description": "Experience mindfulness in gardening practices for inner peace and environmental harmony."
     },
     "gardeningExperiences": {
-      "user": "Olivia Chang",
+      "user": "Olivia Johnson",
       "title": "Zen Garden Design Principles",
       "description": "Explore the principles of Zen garden design for a calming outdoor space."
     },
@@ -231,7 +231,7 @@
       "description": "Experience the flavors of unique herbs and learn culinary uses."
     },
     "gardeningExperiences": {
-      "user": "Isabella Martinez",
+      "user": "Isabella Martin",
       "title": "Herb Propagation Techniques",
       "description": "Explore methods to propagate rare herbs for home cultivation."
     },
