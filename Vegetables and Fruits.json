@@ -1,0 +1,263 @@
+{
+    "vegetables": [
+        {
+            "name": "Carrot",
+            "image_url": "https://www.healthshots.com/wp-content/uploads/2020/11/benefits-of-carrots.jpg",
+            "nutrition": {
+                "calories": 41,
+                "carbohydrates": 9.6,
+                "fiber": 2.8,
+                "vitamin_A": 334,
+                "vitamin_C": 5.9
+            },
+            "growing_tips": "Plant carrots in loose, well-drained soil. Keep them consistently watered and thin out seedlings to allow room for roots to develop."
+        },
+        {
+            "name": "Tomato",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/1082px-Tomato_je.jpg",
+            "nutrition": {
+                "calories": 18,
+                "carbohydrates": 3.9,
+                "fiber": 1.2,
+                "vitamin_A": 1025,
+                "vitamin_C": 13.7
+            },
+            "growing_tips": "Tomatoes need lots of sunlight and well-draining soil. Provide support for the plants as they grow and water consistently."
+        },
+        {
+            "name": "Spinach",
+            "image_url": "https://watermark.lovepik.com/photo/20211120/large/lovepik-spinach-picture_500499214.jpg",
+            "nutrition": {
+                "calories": 23,
+                "carbohydrates": 3.6,
+                "fiber": 2.2,
+                "vitamin_A": 188,
+                "vitamin_C": 28.1
+            },
+            "growing_tips": "Grow spinach in cool weather. Keep the soil consistently moist and harvest outer leaves regularly to encourage continuous growth."
+        },
+        {
+            "name": "Broccoli",
+            "image_url": "https://img.freepik.com/free-photo/bunches-broccoli-wooden-box-near-whole-fresh-broccoli_176474-413.jpg?size=626&ext=jpg",
+            "nutrition": {
+                "calories": 31,
+                "carbohydrates": 6,
+                "fiber": 2.4,
+                "vitamin_A": 120,
+                "vitamin_C": 89.2
+            },
+            "growing_tips": "Plant broccoli in fertile, well-drained soil. Provide consistent moisture and protect from extreme heat. Harvest before flowers bloom."
+        },
+        {
+            "name": "Bell Pepper",
+            "image_url": "https://chefgourmetllc.com/wp-content/uploads/2022/01/BellPeppers-scaled-e1641949331299.jpg",
+            "nutrition": {
+                "calories": 31,
+                "carbohydrates": 6,
+                "fiber": 2.1,
+                "vitamin_A": 372,
+                "vitamin_C": 152
+            },
+            "growing_tips": "Plant peppers in warm soil with good drainage. Provide support for the plants as they grow and keep the soil consistently moist."
+        },
+        {
+            "name": "Cucumber",
+            "image_url": "https://img.freepik.com/premium-photo/cucumber-vegetable-isolated-white-background_42033-135.jpg",
+            "nutrition": {
+                "calories": 15,
+                "carbohydrates": 3.6,
+                "fiber": 0.5,
+                "vitamin_A": 105,
+                "vitamin_C": 2.8
+            },
+            "growing_tips": "Cucumbers need warm soil and plenty of sunlight. Provide trellises for support and keep the soil consistently moist."
+        },
+        {
+            "name": "Potato",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Potato_potato.jpg",
+            "nutrition": {
+                "calories": 77,
+                "carbohydrates": 17,
+                "fiber": 2.2,
+                "vitamin_C": 28
+            },
+            "growing_tips": "Plant potatoes in well-drained, loose soil. Hill up soil around the plants as they grow to prevent greening and protect tubers from sunlight."
+        },
+        {
+            "name": "Beetroot",
+            "image_url": "https://st.depositphotos.com/2125603/2230/i/450/depositphotos_22307523-stock-photo-beet-vegetable.jpg",
+            "nutrition": {
+                "calories": 43,
+                "carbohydrates": 10,
+                "fiber": 2,
+                "vitamin_C": 8
+            },
+            "growing_tips": "Beetroots prefer loose, well-drained soil. Thin seedlings and keep consistently watered for tender roots."
+        },
+        {
+            "name": "Onion",
+            "image_url": "https://thumbs.dreamstime.com/b/red-onion-25289022.jpg",
+            "nutrition": {
+                "calories": 40,
+                "carbohydrates": 9.3,
+                "fiber": 1.7,
+                "vitamin_C": 9.3
+            },
+            "growing_tips": "Plant onions in fertile, well-drained soil. Keep them weed-free and water regularly. Harvest when the tops yellow and fall over."
+        },
+        {
+            "name": "Lettuce",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Romaine_lettuce.jpg/508px-Romaine_lettuce.jpg",
+            "nutrition": {
+                "calories": 15,
+                "carbohydrates": 2.9,
+                "fiber": 1.3,
+                "vitamin_A": 148,
+                "vitamin_C": 9.2
+            },
+            "growing_tips": "Lettuce prefers cooler temperatures. Plant in loose, well-drained soil and provide consistent moisture. Harvest outer leaves for continuous growth."
+        }
+    ],
+    "fruits": [
+        {
+            "name": "Apple",
+            "image_url": "https://thumbs.dreamstime.com/b/red-apple-isolated-clipping-path-19130134.jpg",
+            "nutritional_info": {
+                "calories": 95,
+                "carbs": 25,
+                "fiber": 4,
+                "vitamins": {
+                    "vitamin_c": "14%",
+                    "vitamin_a": "1%"
+                }
+            },
+            "growing_tips": "Plant apple trees in well-drained soil and ensure adequate sunlight. Prune regularly and provide proper spacing for healthy growth."
+        },
+        {
+            "name": "Banana",
+            "image_url": "https://static9.depositphotos.com/1642482/1149/i/600/depositphotos_11490427-stock-photo-three-bananas.jpg",
+            "nutritional_info": {
+                "calories": 105,
+                "carbs": 27,
+                "fiber": 3,
+                "vitamins": {
+                    "vitamin_c": "17%",
+                    "vitamin_b6": "20%"
+                }
+            },
+            "growing_tips": "Banana plants thrive in warm, humid conditions. Ensure regular watering and protect from strong winds."
+        },
+        {
+            "name": "Orange",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Orange-Whole-%26-Split.jpg",
+            "nutritional_info": {
+                "calories": 62,
+                "carbs": 15,
+                "fiber": 3,
+                "vitamins": {
+                    "vitamin_c": "116%",
+                    "vitamin_a": "5%"
+                }
+            },
+            "growing_tips": "Plant orange trees in well-draining soil, preferably in a sunny location. Protect young trees from frost."
+        },
+        {
+            "name": "Grapes",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Table_grapes_on_white.jpg",
+            "nutritional_info": {
+                "calories": 114,
+                "carbs": 29,
+                "fiber": 1,
+                "vitamins": {
+                    "vitamin_c": "4%",
+                    "vitamin_k": "18%"
+                }
+            },
+            "growing_tips": "Grapes grow best in well-draining soil with plenty of sunlight. Prune regularly for better fruit production."
+        },
+        {
+            "name": "Strawberry",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Strawberries.jpg/1280px-Strawberries.jpg",
+            "nutritional_info": {
+                "calories": 33,
+                "carbs": 8,
+                "fiber": 3,
+                "vitamins": {
+                    "vitamin_c": "98%",
+                    "vitamin_k": "2%"
+                }
+            },
+            "growing_tips": "Plant strawberries in fertile, well-draining soil. Provide adequate water and sunlight, and protect from pests."
+        },
+        {
+            "name": "Pineapple",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pineapple_and_cross_section.jpg",
+            "nutritional_info": {
+                "calories": 50,
+                "carbs": 13,
+                "fiber": 1,
+                "vitamins": {
+                    "vitamin_c": "131%",
+                    "vitamin_b6": "9%"
+                }
+            },
+            "growing_tips": "Pineapples prefer tropical conditions. They need well-drained soil and plenty of sun. Mulch around the plants to retain moisture."
+        },
+        {
+            "name": "Mango",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Mango_4.jpg",
+            "nutritional_info": {
+                "calories": 60,
+                "carbs": 15,
+                "fiber": 3,
+                "vitamins": {
+                    "vitamin_c": "67%",
+                    "vitamin_a": "10%"
+                }
+            },
+            "growing_tips": "Mango trees require warm temperatures and well-drained soil. Prune after fruiting to maintain tree health."
+        },
+        {
+            "name": "Watermelon",
+            "image_url": "https://static4.depositphotos.com/1000865/427/i/450/depositphotos_4275626-stock-photo-watermelon.jpg",
+            "nutritional_info": {
+                "calories": 30,
+                "carbs": 8,
+                "fiber": 1,
+                "vitamins": {
+                    "vitamin_c": "21%",
+                    "vitamin_a": "18%"
+                }
+            },
+            "growing_tips": "Watermelons need warm temperatures and a lot of space. Ensure regular watering and well-draining soil."
+        },
+        {
+            "name": "Blueberry",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg",
+            "nutritional_info": {
+                "calories": 84,
+                "carbs": 21,
+                "fiber": 4,
+                "vitamins": {
+                    "vitamin_c": "24%",
+                    "vitamin_k": "36%"
+                }
+            },
+            "growing_tips": "Blueberries thrive in acidic soil with good drainage. Prune in late winter for better growth."
+        },
+        {
+            "name": "Peach",
+            "image_url": "https://www.shutterstock.com/image-photo/peaches-isolated-ripe-peach-half-260nw-2189388721.jpg",
+            "nutritional_info": {
+                "calories": 59,
+                "carbs": 15,
+                "fiber": 2,
+                "vitamins": {
+                    "vitamin_c": "11%",
+                    "vitamin_a": "6%"
+                }
+            },
+            "growing_tips": "Peach trees need well-drained soil and full sun. Prune in late winter to encourage new growth."
+        }
+    ]
+}
