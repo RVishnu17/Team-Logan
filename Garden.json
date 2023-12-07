@@ -1,0 +1,128 @@
+[
+    {
+        "garden": {
+            "location": "Maynooth",
+            "vegetables": [
+                "zucchini",
+                "bell peppers",
+                "kale"
+            ],
+            "fruits": [
+                "oranges",
+                "blueberries",
+                "watermelon"
+            ],
+            "contact_person": {
+                "name": "Emily Smith",
+                "email": "emilysmith@example.com"
+            },
+            "garden_image_url": "https://i.pinimg.com/originals/6e/5d/5c/6e5d5c54883fb3c8944bad9aac4a6494.jpg",
+            "description": "Set in the serene town of Maynooth, this garden thrives in a warm climate and boasts a variety of vibrant produce, creating a relaxing atmosphere."
+        }
+    },
+    {
+        "garden": {
+            "location": "Kilcock",
+            "vegetables": [
+                "cucumbers",
+                "onions",
+                "lettuce"
+            ],
+            "fruits": [
+                "peaches",
+                "plums",
+                "grapes"
+            ],
+            "contact_person": {
+                "name": "Michael Johnson",
+                "email": "michaeljohnson@example.com"
+            },
+            "garden_image_url": "https://www.happysprout.com/wp-content/uploads/sites/4/2021/01/vegetable-garden.jpg",
+            "description": "Nestled in the scenic hills of Kilcock, this garden offers a diverse range of produce, providing a serene escape for visitors seeking natural beauty."
+        }
+    },
+    {
+        "garden": {
+            "location": "Lucan",
+            "vegetables": [
+                "squash",
+                "cabbage",
+                "broccoli"
+            ],
+            "fruits": [
+                "lemons",
+                "kiwis",
+                "raspberries"
+            ],
+            "contact_person": {
+                "name": "Sophia Rodriguez",
+                "email": "sophiarodriguez@example.com"
+            },
+            "garden_image_url": "https://www.mandycanudigit.com/wp-content/uploads/2018/06/climbing-fruit-2.jpg",
+            "description": "Embracing a seaside setting, the Lucan garden features a mix of savory vegetables and tangy fruits, offering tranquility reminiscent of coastal bliss."
+        }
+    },
+    {
+        "garden": {
+            "location": "Liffey Valley",
+            "vegetables": [
+                "potatoes",
+                "garlic",
+                "sweet corn"
+            ],
+            "fruits": [
+                "cherries",
+                "blackberries",
+                "figs"
+            ],
+            "contact_person": {
+                "name": "Daniel Brown",
+                "email": "danielbrown@example.com"
+            },
+            "garden_image_url": "https://i0.wp.com/agnetwest.com/wp-content/uploads/2016/10/backyard-vegetable-garden.jpg?resize=742%2C433&ssl=1",
+            "description": "Nestled amidst the majestic mountains in Liffey Valley, this garden showcases an array of hearty vegetables and delicious fruits, a haven for nature enthusiasts."
+        }
+    },
+    {
+        "garden": {
+            "location": "Greenfield",
+            "vegetables": [
+                "asparagus",
+                "artichokes",
+                "celery"
+            ],
+            "fruits": [
+                "pears",
+                "persimmons",
+                "nectarines"
+            ],
+            "contact_person": {
+                "name": "Olivia White",
+                "email": "oliviawhite@example.com"
+            },
+            "garden_image_url": "https://www.foodsafetynews.com/files/2019/07/home-vegetable-garden.jpg",
+            "description": "Nestled by the riverside in Greenfield, this garden presents a variety of fresh vegetables and delectable fruits, offering a picturesque setting."
+        }
+    },
+    {
+        "garden": {
+            "location": "Dublin",
+            "vegetables": [
+                "beets",
+                "turnips",
+                "pumpkins"
+            ],
+            "fruits": [
+                "peaches",
+                "grapefruits",
+                "apricots"
+            ],
+            "contact_person": {
+                "name": "Emma Clark",
+                "email": "emmaclark@example.com"
+            },
+            "garden_image_url": "https://static.independent.co.uk/2023/06/24/00/0fe4076049c8c7d905ac694e024c490aY29udGVudHNlYXJjaGFwaSwxNjg3NTg2Nzc2-2.72723877.jpg",
+            "description": "Set in the meadows of Dublin, this garden hosts an assortment of fresh vegetables and succulent fruits, providing a peaceful retreat amidst urban surroundings."
+        }
+    }
+]
