@@ -57,8 +57,10 @@ function FruitVegetableComponent() {
             <li key={index}>
               <h3>{item.name}</h3>
               <img src={item.image_url} alt={item.name} />
-              <p>Calories: {item.nutrition.calories}</p>
-              <p>Growing Tips: {item.growing_tips}</p>
+              <p>
+                Calories: {item.nutrition ? item.nutrition.calories : "N/A"}
+              </p>
+              <p>Growing Tips: {item.growing_tips || "Not available"}</p>
             </li>
           ))}
         </ul>
