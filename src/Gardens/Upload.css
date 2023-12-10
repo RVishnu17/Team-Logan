@@ -1,0 +1,80 @@
+formm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+  }
+  
+  .checkbox-item {
+    margin-right: 16px; /* Adjust the spacing between checkboxes */
+    margin-bottom: 8px;
+    border-right: 3px solid #010000; /* Add a border to the right of each checkbox */
+    border-bottom: 3px solid #010000;
+    padding-right: 8px; /* Add some padding to the right of each checkbox for better spacing */
+    background-color: #4CAF50; /* Green background */
+  color: white;
+}
+  
+  .checkbox-item:last-child {
+    border-right: 3px solid #010000; /* Remove the border from the last checkbox */
+  }
+  
+  .checkbox-item input {
+    margin-right: 8px;
+    background-color: white; /* Green background */
+  color: #000200;
+  }
+select,
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#gardenContainer {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#gardenForm {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
