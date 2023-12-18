@@ -23,104 +23,102 @@ var show_upl = false;
 var show_gl = false;
 var vegview = false;
 
-function App() {
-  const [data, setData]  = useState(null);
+const App = () => {
+  const [data, setData] = useState(null);
   const [loc, setLoc] = useState(null);
-  const [error, Seterror] = useState(null);
-  const [show_comp, Setshow] = useState(0);
-  const [veginfo, Setveginfo] = useState([]);
-  function handleclickonloc(e)
-{ 
- setLoc(e);
- show_gl = true;
+  const [error, setError] = useState(null);
+  const [showComp, setShowComp] = useState(0);
+  const [vegInfo, setVegInfo] = useState([]);
+  const [showUpl, setShowUpl] = useState(false);
+  const [showGl, setShowGl] = useState(false);
+  const [vegView, setVegView] = useState(false);
 
-}
-let locforupload = data ? data.map((i) => i.garden.location) : [];
+  const handleLocationClick = (e) => {
+    setLoc(e);
+    setShowGl(true);
+  };
+
+  const locForUpload = data ? data.map((i) => i.garden.location) : [];
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const dataRef = ref(database, '/'); 
+        const dataRef = ref(database, '/');
         const dataSnapshot = await get(dataRef);
         setData(dataSnapshot.val());
       } catch (error) {
         console.error('Error fetching data:', error);
       }
-
-      
     };
-    const fetchData_1 = async () => {
-      try{
-      const response = await fetch(vegURL);
-      const JSON = await response.json();
-      Setveginfo(JSON.vegetables);
-    }
-  
-  catch(error)
-  {
-    Seterror(error);
 
-  }
+    const fetchData_1 = async () => {
+      try {
+        const response = await fetch(vegURL);
+        const jsonData = await response.json();
+        setVegInfo(jsonData.vegetables);
+      } catch (error) {
+        setError(error);
+      }
+    };
+
+    fetchData_1();
+    fetchData();
+  }, []);
+
+  const changeLoc = (l) => {
+    setData(l);
+  };
+
+  const changeUpl = () => {
+    setShowComp((prevComp) => prevComp + 1);
+    setShowUpl((prevShowUpl) => !prevShowUpl);
+    setShowGl(false);
+  };
+
+  const handleVegViewClick = () => {
+    setVegView(true);
+  };
+
+  console.log(
+    `show garden button: ${showGl}, upload button: ${showUpl}, vegtips button: ${vegView}`
+  );
+
+  return (
+    <div>
+      <h1 className="Headertxt">
+        <a href="">MakeYourGreens </a>
+      </h1>
+      <button className="upbtn" onClick={changeUpl}>
+        Upload your garden
+      </button>
+
+      <div className="container dropdown">
+        <button className="right-aligned-button dropbtn">
+          Search Gardens on Locations
+        </button>
+
+        <div className="dropdown-content">
+          {data &&
+            data.map((p, index) => (
+              <a key={index} onClick={() => handleLocationClick(p.garden.location)}>
+                {p.garden.location}
+              </a>
+            ))}
+        </div>
+      </div>
+
+      {vegView && !showUpl && !showGl && vegInfo && <AddVegFruit vegnfru={vegInfo} />}
+      {showGl && data && <ShowGbyL selectedlocation={loc} sview={data} />}
+      {!vegView && !showUpl && !showGl && data && <FrontPage fview={data} />}
+      {showUpl && !showGl && data && <AddGbyL vegdata={vegInfo} locinfo={locForUpload} />}
+      <button className="upbtn" onClick={handleVegViewClick}>
+        Tips on Growing Veggies
+      </button>
+    </div>
+  );
 };
 
-fetchData_1();  
-fetchData();
-  }, []);
- 
-  function changeLoc(l)
-  {
-    setData(l);
-  }
-
-  function changeupl()
-  {
-
-    Setshow(show_comp + 1);
-    console.log(show_comp);
-    if(show_comp %2 ===0)
-    {
-      show_upl = true;
-    }
-    else{
-      show_upl = false;
-    }
-    show_gl = false;
-  }
-  
- console.log("show garden button : " + show_gl + "   upload button : " + show_upl + "   vegtips button : +  " + vegview);
- 
-return (
-    <div>
-      
-      <h1 className="Headertxt"> <a href=''>MakeYourGreens </a></h1>
-      <button align="right" className="upbtn" onClick={changeupl} >Upload your garden</button>
-   
-      <div  className="container dropdown">
-      
-      <button className="right-aligned-button  dropbtn">Search Gardens on Locations </button>
-      
-      <div className="dropdown-content">
-      {data && (data.map((p, index)=>
-      (
-        
-      <a key={index} onClick={() => handleclickonloc(p.garden.location)}> {p.garden.location} </a>
-      )))
-      
-      
-}
-</div>
-
-        </div>
-        {vegview && !show_upl && !show_gl && veginfo && <AddVegFruit vegnfru={veginfo}/>}
-        {show_gl && data && <ShowGbyL selectedlocation={loc} sview={data} /> }
-        {!vegview && !show_upl && !show_gl && data && <FrontPage fview={data}/>}
-        {show_upl && !show_gl && data && <AddGbyL vegdata={veginfo} locinfo={locforupload}  />}
-        <button align="right" className='upbtn' onClick={() => { vegview =true; }}>
-  Tips on Growing Veggies
-</button>
-</div>
-    
-  );
-}
+export default App;
 /*
   <h1 class="Headertxt">MakeYourOwnVeggie</h1>
       <div  class="container dropdown">
@@ -138,4 +136,4 @@ return (
       
 }
     </div>*/
-export default App;
+
