@@ -1,0 +1,28 @@
+.front-page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .garden-info {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  .garden-image {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  

@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, get } from 'firebase/database';
 import {AddGbyL} from './Gardens/AddGbyL'
+import { FrontPage } from './Gardens/FrontPage';
+import ShowGbyL from './Gardens/ShowGbyL';
 const firebaseConfig = {
   apiKey: "AIzaSyAWYp7Lkkafo-Kw2nLCY929zPXMjNp0KG8",
   authDomain: "makeyourownveggies.firebaseapp.com",
@@ -13,21 +15,25 @@ const firebaseConfig = {
   appId: "1:112820819708:web:36b836c1997163321b2979",
   measurementId: "G-ZENTVWQ1JL"
 };
-
+const vegURL = "https://raw.githubusercontent.com/Nikhat-ux/Team-Logan/main/Vegetables%20and%20Fruits.json";
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 var show_upl = false;
+var show_gl = false;
 
 function App() {
   const [data, setData]  = useState(null);
   const [loc, setLoc] = useState(null);
   const [error, Seterror] = useState(null);
   const [show_comp, Setshow] = useState(0);
+  const [veginfo, Setveginfo] = useState([]);
   function handleclickonloc(e)
 { 
  setLoc(e);
+ show_gl = true;
+
 }
-  
+let locforupload = data ? data.map((i) => i.garden.location) : [];
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -37,17 +43,32 @@ function App() {
       } catch (error) {
         console.error('Error fetching data:', error);
       }
-    };
 
-    fetchData();
-  }, []);
+      
+    };
+    const fetchData_1 = async () => {
+      try{
+      const response = await fetch(vegURL);
+      const JSON = await response.json();
+      Setveginfo(JSON.vegetables);
+    }
   
+  catch(error)
+  {
+    Seterror(error);
+
+  }
+};
+
+fetchData_1();  
+fetchData();
+  }, []);
+ 
   function changeLoc(l)
   {
     setData(l);
   }
 
-  
   function changeupl()
   {
 
@@ -60,27 +81,21 @@ function App() {
     else{
       show_upl = false;
     }
+    show_gl = false;
   }
-  function filbyloc(L)
-  {
-      new function(obj)
-      {
-        let match = L.toLowerCase();
-        let targetl = obj.location.toLowerCase();
-
-        return targetl.incudes(match);
-      }
-  }
-
   
+ console.log("clicked location : " + show_gl);
+ console.log("clicked upload : " + show_upl);
+ console.log("Location Array : +  " + locforupload);
 return (
     <div>
       
-      <h1 className="Headertxt">MakeYourOwnVeggies</h1>
+      <h1 className="Headertxt"> <a href=''>MakeYourOwnVeggies </a></h1>
       <button align="right" className="upbtn" onClick={changeupl} >Upload your garden</button>
+   
       <div  className="container dropdown">
       
-      <button className="right-aligned-button  dropbtn">Search Gardens on Locations </button>
+      <button className="right-aligned-button  dropbtn">Search Gardens on Locations { loc} </button>
       <div className="dropdown-content">
       {data && (data.map((p, index)=>
       (
@@ -94,8 +109,9 @@ return (
     
    
         </div>
-
-        {show_upl && <AddGbyL />}
+        {show_gl && data && <ShowGbyL selectedlocation={loc} sview={data} /> }
+        {!show_upl && !show_gl && data && <FrontPage fview={data}/>}
+        {show_upl && !show_gl && data && <AddGbyL vegdata={veginfo} locinfo={locforupload}  />}
 </div>
     
   );
