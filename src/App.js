@@ -6,6 +6,7 @@ import { getDatabase, ref, get } from 'firebase/database';
 import {AddGbyL} from './Gardens/AddGbyL'
 import { FrontPage } from './Gardens/FrontPage';
 import ShowGbyL from './Gardens/ShowGbyL';
+import ShowVeg, { AddVegFruit } from './Gardens/ShowVeg';
 const firebaseConfig = {
   apiKey: "AIzaSyAWYp7Lkkafo-Kw2nLCY929zPXMjNp0KG8",
   authDomain: "makeyourownveggies.firebaseapp.com",
@@ -15,11 +16,12 @@ const firebaseConfig = {
   appId: "1:112820819708:web:36b836c1997163321b2979",
   measurementId: "G-ZENTVWQ1JL"
 };
-const vegURL = "https://raw.githubusercontent.com/Nikhat-ux/Team-Logan/main/Vegetables%20and%20Fruits.json";
+const vegURL = "https://raw.githubusercontent.com/RVishnu17/Team-Logan/main/Vegetables%20and%20Fruits.json";
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 var show_upl = false;
 var show_gl = false;
+var vegview = false;
 
 function App() {
   const [data, setData]  = useState(null);
@@ -84,18 +86,18 @@ fetchData();
     show_gl = false;
   }
   
- console.log("clicked location : " + show_gl);
- console.log("clicked upload : " + show_upl);
- console.log("Location Array : +  " + locforupload);
+ console.log("show garden button : " + show_gl + "   upload button : " + show_upl + "   vegtips button : +  " + vegview);
+ 
 return (
     <div>
       
-      <h1 className="Headertxt"> <a href=''>MakeYourOwnVeggies </a></h1>
+      <h1 className="Headertxt"> <a href=''>MakeYourGreens </a></h1>
       <button align="right" className="upbtn" onClick={changeupl} >Upload your garden</button>
    
       <div  className="container dropdown">
       
-      <button className="right-aligned-button  dropbtn">Search Gardens on Locations { loc} </button>
+      <button className="right-aligned-button  dropbtn">Search Gardens on Locations </button>
+      
       <div className="dropdown-content">
       {data && (data.map((p, index)=>
       (
@@ -106,12 +108,15 @@ return (
       
 }
 </div>
-    
-   
+
         </div>
+        {vegview && !show_upl && !show_gl && veginfo && <AddVegFruit vegnfru={veginfo}/>}
         {show_gl && data && <ShowGbyL selectedlocation={loc} sview={data} /> }
-        {!show_upl && !show_gl && data && <FrontPage fview={data}/>}
+        {!vegview && !show_upl && !show_gl && data && <FrontPage fview={data}/>}
         {show_upl && !show_gl && data && <AddGbyL vegdata={veginfo} locinfo={locforupload}  />}
+        <button align="right" className='upbtn' onClick={() => { vegview =true; }}>
+  Tips on Growing Veggies
+</button>
 </div>
     
   );

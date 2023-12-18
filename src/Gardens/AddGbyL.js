@@ -25,6 +25,9 @@ export const AddGbyL = (props) =>
           }
           else
           {
+            vegetablesincart.pop();
+            setvegetablesincart((prevSelected) => [...prevSelected]);
+      
             console.log(value + "unticked! and in cart : " + vegetablesincart);
           }
         }
@@ -83,7 +86,7 @@ export const AddGbyL = (props) =>
                 onChange={handleCustomVegetableChange}
               />
               <button type="button" onClick={addCustomVegetable}>
-               Add, you already have : {vegetablesincart}
+               Add, you already have : {vegetablesincart + " "}
               </button>
             </div>
           </div>
