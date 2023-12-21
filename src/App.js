@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+//required imports
 import { useEffect, useState } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, get } from 'firebase/database';
@@ -7,6 +8,7 @@ import {AddGbyL} from './Gardens/AddGbyL'
 import { FrontPage } from './Gardens/FrontPage';
 import ShowGbyL from './Gardens/ShowGbyL';
 import ShowVeg, { AddVegFruit } from './Gardens/ShowVeg';
+//all firebase configs
 const firebaseConfig = {
   apiKey: "AIzaSyAWYp7Lkkafo-Kw2nLCY929zPXMjNp0KG8",
   authDomain: "makeyourownveggies.firebaseapp.com",
@@ -16,14 +18,17 @@ const firebaseConfig = {
   appId: "1:112820819708:web:36b836c1997163321b2979",
   measurementId: "G-ZENTVWQ1JL"
 };
+//url to raw github file
 const vegURL = "https://raw.githubusercontent.com/RVishnu17/Team-Logan/main/Vegetables%20and%20Fruits.json";
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
+//component conditional rendering variables
 var show_upl = false;
 var show_gl = false;
 var vegview = false;
 
 const App = () => {
+  // all state variables for props and fetching JSON from firebase and github
   const [data, setData] = useState(null);
   const [loc, setLoc] = useState(null);
   const [error, setError] = useState(null);
@@ -33,12 +38,22 @@ const App = () => {
   const [showGl, setShowGl] = useState(false);
   const [vegView, setVegView] = useState(false);
 
+  // all methods to operate on fetched data
   const handleLocationClick = (e) => {
     setLoc(e);
     setShowGl(true);
   };
 
-  const locForUpload = data ? data.map((i) => i.garden.location) : [];
+  const locForUploadSet = new Set();
+//avoiding duplicate locations while displaying the array
+if (data) {
+  data.forEach((i) => {
+    if (i.garden && i.garden.location) {
+      locForUploadSet.add(i.garden.location);
+    }
+  });
+}
+  const locForUpload = Array.from(locForUploadSet);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -79,9 +94,6 @@ const App = () => {
     setVegView(true);
   };
 
-  console.log(
-    `show garden button: ${showGl}, upload button: ${showUpl}, vegtips button: ${vegView}`
-  );
 
   return (
     <div>
@@ -99,9 +111,9 @@ const App = () => {
 
         <div className="dropdown-content">
           {data &&
-            data.map((p, index) => (
-              <a key={index} onClick={() => handleLocationClick(p.garden.location)}>
-                {p.garden.location}
+            locForUpload.map((p, index) => (
+              <a key={index} onClick={() => handleLocationClick(p)}>
+                {p}
               </a>
             ))}
         </div>
@@ -119,21 +131,5 @@ const App = () => {
 };
 
 export default App;
-/*
-  <h1 class="Headertxt">MakeYourOwnVeggie</h1>
-      <div  class="container dropdown">
-      <button class="right-aligned-button  dropbtn">Search Gardens on Locations </button>  
-      
-      
-      {data&& (locarr.map((p)=>
-      (
-        <div class="dropdown-content">
-      <a href="#"> p.location </a>
-    
-    </div>
-      )))
-      
-      
-}
-    </div>*/
+
 
